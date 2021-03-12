@@ -1,0 +1,19 @@
+@media only screen and (min-width:1141px){
+    
+    #container{
+        margin-bottom: 3em;
+        display: flex;
+    }
+    section{
+        width: 46%;
+        float: left;
+        margin: 0 2%;
+    }
+    #banner{
+        margin-bottom: 2em;
+    }
+    .card {
+        margin-top: auto;
+        margin-bottom: 2em;
+    }
+}
