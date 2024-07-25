@@ -20,4 +20,8 @@
     .wip {
         text-align: center;
     }
+
+    .wip > img {
+        border-radius: 1em;
+    }
 }
