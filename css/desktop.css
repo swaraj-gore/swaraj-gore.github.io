@@ -71,4 +71,8 @@
         margin-top: auto;
         margin-bottom: 2em;
     }
+
+    .wip {
+        text-align: center;
+    }
 }
