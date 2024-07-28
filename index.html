@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/phone.css">
     <link rel="stylesheet" href="./css/tablet.css">
@@ -12,27 +14,116 @@
     <title>Home: Swaraj Gore</title>
 </head>
 <body>
+    <div id="banner">
+        <img id="display-picture" src="./images/SwarajGore.jpeg" alt="Swaraj">
+        <div class="contact-info">
+            <p><i class="fa-regular fa-id-badge" style="color: #e49bff;"></i> Swaraj Gore</p>
+            <p><i class="fa-solid fa-laptop-code" style="color: #e49bff;"></i> Java Developer</p>
+            <p><i class="fa-solid fa-location-dot" style="color: #e49bff;"></i> Pune</p>
+            <p><i class="fa-regular fa-calendar" style="color: #e49bff;"></i> 3 YOE</p>
+            <p id="linkedin"><i class="fa-brands fa-linkedin" style="color: #e49bff;"></i> <a href="https://www.linkedin.com/in/swaraj-gore/" target="_blank">swaraj-gore</a></p>
+            <p id="email"><i class="fa-regular fa-envelope" style="color: #e49bff;"></i><a href="mailto:swaraj.gore@outlook.com" target="_blank"> swaraj.gore@outlook.com</a></p>
+        </div>
+        <div id="open-nav" class="nav-option">&#x2630;</div>
+        <div id="nav">
+            <ul>
+                <li id="close-nav" class="nav-option">X</li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li id="contact-me-link"><a href="#contact-me">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
     <div id="container">
         <section id="left">
-            <div id="banner">
-                <figure>
-                    <img src="./images/SwarajGore.jpeg" alt="Swaraj">
-                    <figcaption>Swaraj Sambhaji Gore</figcaption>
-                </figure>
-            </div>
-            <div class="card">
-                <h1>How to reach me</h1>
+            <div id="skills" class="card">
+                <h1><i class="fa-solid fa-screwdriver-wrench" style="color: #850F8D;"></i> Skills</h1>
                 <div class="block">
-                    <h1>Email:</h1>
-                    <h2><a href="mailto:swarajgore99@gmail.com">swarajgore99@gmail.com</a></h2>
+                    <h1>Programming Languages</h1>
+                    <div id="java" class="skill">
+                        <div class="skill-name"><h2>Java</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                    <div id="python" class="skill">
+                        <div class="skill-name"><h2>Python</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                    <div id="javascript" class="skill">
+                        <div class="skill-name"><h2>JavaScript</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="block">
-                    <h1>Linkedin:</h1>
-                    <h2><a href="https://www.linkedin.com/in/swaraj-gore/">@swaraj-gore</a></h2>
+                    <h1>Database</h1>
+                    <div id="mysql" class="skill">
+                        <div class="skill-name"><h2>MySQL</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <h1>Libraries and Framework</h1>
+                    <div id="spring" class="skill">
+                        <div class="skill-name"><h2>Spring</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                    <div id="spring-boot" class="skill">
+                        <div class="skill-name"><h2>Spring Boot</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                    <div id="jpa-hibernate" class="skill">
+                        <div class="skill-name"><h2>JPA Hibernate</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <h1>Web Development</h1>
+                    <div id="html-skill" class="skill">
+                        <div class="skill-name"><h2>HTML</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                    <div id="css-skill" class="skill">
+                        <div class="skill-name"><h2>CSS</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
+                    <div id="jquery-skill" class="skill">
+                        <div class="skill-name"><h2>jQuery</h2></div>
+                        <div class="rating">
+                            <div class="rating-value"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <h1>Education</h1>
+            <div id="contact-me" class="card">
+                <h1><i class="fa-solid fa-address-book"></i> Contact me</h1>
+                <div class="block">
+                    <h1><i class="fa-solid fa-envelope"></i> <a href="mailto:swaraj.gore@outlook.com">swaraj.gore@outlook.com</a></h1>
+                </div>
+                <div class="block">
+                    <h1><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/swaraj-gore/">@swaraj-gore</a></h1>
+                </div>
+            </div>
+            <div id="education" class="card">
+                <h1><i class="fa-solid fa-graduation-cap"></i> Education</h1>
                 <div class="block">
                     <h1>JSPM's Jayawantrao Sawant College Of Engineering, Pune</h1>
                     <h2>Bachelor Of Engineering(B.E.) Computer</h2>
@@ -49,8 +140,8 @@
             </div>
         </section>
         <section id="right">
-            <div class="card">
-                <h1>About me</h1>
+            <div id="about-me" class="card">
+                <h1><i class="fa-solid fa-id-badge"></i> About me</h1>
                 <p>
                     As a passionate and dedicated software developer with <strong>3 years</strong> of experience, I specialize in creating robust
                     applications. My expertise spans across front-end and back-end development, utilizing technologies such as <strong>Java, MySQL,
@@ -59,24 +150,31 @@
                     environments where I can contribute to innovative projects.
                 </p>
             </div>
-            
-            <div class="card">
-                <h1>Skills</h1>
-                <ul>
-                    <li><h2>&bull; C</h2></li>
-                    <li><h2>&bull; C++</h2></li>
-                    <li><h2>&bull; Java</h2></li>
-                    <li><h2>&bull; Python</h2></li>
-                    <li><h2>&bull; JavaScript (itermediate)</h2></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h1>Project</h1>
+            <div id="experience" class="card">
+                <h1><i class="fa-solid fa-briefcase"></i> Experience</h1>
                 <div class="block">
+                    <h1>EvoluteIQ Solutions Private Limited</h1>
+                    <p><em>Solution Engineer 1</em></p>
+                    <p>July 2023 - Present</p>
+                    <p>
+                        Built a GenAI idea submission platform with email notifications for reviewers and submitters. Developed features in an
+                        agile environment, including a responsive UI with CSS media queries and email functionality using Java and LDAP. Created
+                        financial automation tools and integrated SharePoint for processing Excel sheets with Spring Boot.
+                    </p>
+                </div>
+                <div class="block">
+                    <h1>Persistent Systems Limited</h1>
+                    <p><em>Software Engineer</em></p>
+                    <p>June 2021 - June 2023</p>
+                    <p>
+                        Developed static code analysis rules for Java, Python, and JavaScript. Created a GitHub action to display
+                        vulnerabilities. Used BeautifulSoup in Python to create a dataset for rule evaluation. Demonstrated strong
+                        problem-solving skills and effective teamwork.
+                    </p>
                 </div>
             </div>
         </section>
     </div>
-    
+    <script src="./js/index.js"></script>
 </body>
 </html>

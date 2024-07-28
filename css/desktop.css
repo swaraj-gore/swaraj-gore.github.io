@@ -1,16 +1,71 @@
 @media only screen and (min-width:1141px){
     
+    #banner {
+        justify-content: space-between;
+    }
+
+    #display-picture {
+        margin: 8px;
+    }
+
+    #open-nav {
+        display: none;
+    }
+
+    #nav {
+        position: static;
+        transition: none;
+        z-index: auto;
+        width: auto;
+        right: auto;
+        background-color: inherit;
+        flex: 6;
+    }
+
+    #nav ul {
+        transition: none;
+        display: flex;
+        justify-content: flex-end;
+        background-color: white;
+        padding: 8px;
+        border-radius: 1em;
+        width: max-content;
+        float: right;
+    }
+
+    #nav ul li {
+        margin-bottom: auto;
+    }
+
+    #nav ul li:not(:last-child):not(:first-child):not(:nth-child(2)) {
+        margin-left: 1em;
+    }
+
+    #nav ul li#close-nav {
+        display: none;
+    }
+
     #container{
         margin-bottom: 3em;
-        display: flex;
+        flex-direction: row;
     }
     section{
         width: 46%;
         float: left;
         margin: 0 2%;
     }
+
+    #left {
+        order: 1;
+    }
+
+    #right {
+        order: 2;
+    }
+
     #banner{
-        margin-bottom: 2em;
+        max-width: 1141px;
+        margin: auto auto 2em;
     }
     .card {
         margin-top: auto;
